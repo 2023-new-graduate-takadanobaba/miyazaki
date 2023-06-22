@@ -54,6 +54,9 @@
       - syso("name="+name)
  - 処理
    -出力文字列を作る
+      - sysoで"名前を記入してください。"と表示
+      - scanner.nextLine()で名前を入力する
+      - 変数nameに格納する
       - 変数yobinaに"こんにちは、"と"さん"のリテラルを格納
       - 変数yobinaにnameを足す
         println()でyobinaを表示して動作確認
