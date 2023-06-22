@@ -54,7 +54,10 @@
       - syso("name="+name)
  - 処理
    -出力文字列を作る
-      - 
+      - 変数yobinaに"こんにちは、"と"さん"のリテラルを格納
+      - 変数yobinaにnameを足す
+        println()でyobinaを表示して動作確認
+        - sysoで("yobina="+yobina)
      
   - 出力
     - 文字列を表示する 
