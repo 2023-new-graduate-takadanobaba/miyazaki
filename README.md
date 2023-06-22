@@ -55,11 +55,7 @@
  - 処理
    -出力文字列を作る
       - sysoで"名前を記入してください。"と表示
-      - scanner.nextLine()で名前を入力する
-      - 変数nameに格納する
-      - 変数yobinaに"こんにちは、"と"さん"のリテラルを格納
-      - 変数yobinaにnameを足す
-        println()でyobinaを表示して動作確認
+        - println()でyobinaを表示して動作確認
         - sysoで("yobina="+yobina)
      
   - 出力
@@ -70,6 +66,34 @@
   - 動作確認
     - "みやざきりゅうせい"と入力して確認
     - "魔人ブウ"と入力して確認
+
+    - "◯◯さんの好きな食べ物は△△ですね"と「好きな食べ物は△△と、△△と、△△ですね」
+        - 入力
+          - インポートする
+          - 食べ物を入力する(複数入力可能)
+          - new ArrayList()する
+          - List<String> foodsに格納する
+          
+        - 処理
+          - 出力文字列を作る
+            - sc.nextLine()をString型 lineに代入
+            - line.sprit("、",0)をString[] tmpListに代入
+          - forのためのListの箱を作る
+            - new ArrayList()する
+            - List<Integer>listに代入
+          - for１個目の文作成
+            - tempList.lengthがiより大きい場合
+            - list配列にString型をInteger.parseIntした(tempList[i])を代入
+          - for２個目の文作成
+            - List.size()  //sizeは要素数がiより大きい場合
+            - syso(list.get(i))でリストから値を取得する
+          - if文作成
+            - iがtempList.length -1のとき
+            - syso(+foods+)
+        - 出力
+          - 文字列を表示する
+        - 動作確認
+
 
 
 
