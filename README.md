@@ -80,7 +80,7 @@
             - line.sprit("、",0)をString[] tmpListに代入
           - forのためのListの箱を作る
             - new ArrayList()する
-            - List<Integer>listに代入
+            - List・Integer・listに代入
           - for１個目の文作成
             - tempList.lengthがiより大きい場合
             - list配列にString型をInteger.parseIntした(tempList[i])を代入
