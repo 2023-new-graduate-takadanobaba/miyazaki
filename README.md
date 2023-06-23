@@ -78,11 +78,14 @@
         - 処理
           - List<String>foodsにnew ArrayList<String>を代入
           - sc.nextLine()をString lineに代入
+          - lineをsplitで配列として受け取るようにして、ListFoodsに代入する
+            - lineをsplitで配列で受け取る
+            - 配列をArrays.asListでリストに変換してListFoodsに代入
           - if～else if文で分岐する
           - リストの数がなければ表示しない、１個の場合、複数の場合(for文？)の３分岐で考える
           - if(line.length==0)やったら何も表示しない
-          - else if (list.size=1){syso(name+"さんの好きな食べ物は"+foods[0]+"です")}
-          - else if(list.size>1){syso(nameさんの好きな食べ物は)+for(i=0:i<=list.size:i++){"syso(list[i]と、)"}syso(ですね)
+          - else if (ListFoods.size=1){syso(name+"さんの好きな食べ物は"+foods[0]+"です")}
+          - else if(ListFoods.size>1){syso(nameさんの好きな食べ物は)+for(i=0:i<=ListFoods.size:i++){"syso(ListFoods[i]と、)"}syso(ですね)
         - 出力
           - sysoで好きな食べ物は何ですか聞く(,で区切ってください)
           - 結果がポーン
