@@ -21,6 +21,7 @@ public class buu {
         for(int i=0;i<tmpList.length;i++)list.add(Integer.parseInt(tmpList[i]));
             for(int i=0;i<list.size();i++){
                 System.out.print(list.get(i));
+                
             if(i != tmpList.length - 1)System.out.print(",");
         }
     }
