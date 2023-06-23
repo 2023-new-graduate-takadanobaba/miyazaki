@@ -76,7 +76,6 @@
             - sc.nextLine()で食べ物を入力する
             - scanner.useDelimiter(",")
         - 処理
-          - List<String>foodsにnew ArrayList<String>を代入
           - sc.nextLine()をString lineに代入
           - lineをsplitで配列として受け取るようにして、ListFoodsに代入する
             - lineをsplitで配列で受け取る
@@ -86,6 +85,12 @@
           - if(line.length==0)やったら何も表示しない
           - else if (ListFoods.size=1){syso(name+"さんの好きな食べ物は"+foods[0]+"です")}
           - else if(ListFoods.size>1){syso(nameさんの好きな食べ物は)+for(i=0:i<=ListFoods.size:i++){"syso(ListFoods[i]と、)"}syso(ですね)
+          - 複数の食べ物を入力し、～と、～と、～です。と表示する
+            - else ifの条件は(ListFoods.size>1)
+            - 繰り返さない部分syso「好きな食べ物は」
+            - リストの最後の要素以外は「ListFood.get()～と、」でループ
+            - リストの最後の要素は「ListFood.get()」
+            - 繰り返さない部分syso「です」
         - 出力
           - sysoで好きな食べ物は何ですか聞く(,で区切ってください)
           - 結果がポーン
