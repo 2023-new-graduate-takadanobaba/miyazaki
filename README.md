@@ -69,37 +69,25 @@
 
     - "◯◯さんの好きな食べ物は△△ですね"と「好きな食べ物は△△と、△△と、△△ですね」
         - 入力
-          - インポートする
-          - 食べ物を入力する(複数入力可能)
-          - new ArrayList()する
-          - List<String> foodsに格納する
-          
+          - 好きな食べ物を入力する
+            - インポートする（List、ArrayList）
+            - System inを渡してnewする
+            - 変数scに格納する
+            - sc.nextLine()で食べ物を入力する
+            - scanner.useDelimiter(",")
         - 処理
-          - 出力文字列を作る
-            - sc.nextLine()をString型 lineに代入
-            - line.sprit("、",0)をString[] tmpListに代入
-          - forのためのListの箱を作る
-            - new ArrayList()する
-            - List・Integer・listに代入
-          - for１個目の文作成
-            - tempList.lengthがiより大きい場合
-            - list配列にString型をInteger.parseIntした(tempList[i])を代入
-          - for２個目の文作成
-            - List.size()  //sizeは要素数がiより大きい場合
-            - syso(list.get(i))でリストから値を取得する
-          - if文作成
-            - iがtempList.length -1のとき
-            - syso(+foods+)
+          - List<String>foodsにnew ArrayList<String>を代入
+          - sc.nextLine()をString lineに代入
+          - if～else if文で分岐する
+          - リストの数がなければ表示しない、１個の場合、複数の場合(for文？)の３分岐で考える
+          - if(list.size==0)やったら何も表示しない
+          - else if (list.size=1){syso(name+"さんの好きな食べ物は"+foods[0]+"です")}
+          - else if(list.size>1){syso(nameさんの好きな食べ物は)+for(i=0:i<=list.size:i++){"syso(list[i]と、)"}syso(ですね)
         - 出力
-          - 文字列を表示する
+          - sysoで好きな食べ物は何ですか聞く(,で区切ってください)
+          - 結果がポーン
         - 動作確認
-
-
-
-
-
-
-
+          -   試す
 
 
 
