@@ -92,11 +92,10 @@
           -フローチャート
           ```mermaid
            graph TB
-            A([start])-->B{true?}
-            B--Yes-->C[process]
-            B--No-->D[exception]
-            C-->E([end])
-            D-->E
+            A([名前聞く])-->B{名前表示}
+            B--if1-->C[なにも表示しない]
+            B--if2-->D[表示パターン１]
+            B--if3-->[表示パターン２]
           ```
 
 
