@@ -92,10 +92,12 @@
           -フローチャート
           ```mermaid
              gragh TB
-            A(["ナメェ入力"])-->B{こんにちは、nameさん}
-            B--if(list.size=0)-->C["なにも表示しない"]
-            B--if else(list.size=1)-->D["nameさんの好きな食べ物はfoodsです"]
-            B--if else(list.size>1)-->E["nameさんの好きな食べ物は～"]
+           graph TB
+            A([start])-->B{true?}
+            B--Yes-->C[process]
+            B--No-->D[exception]
+            C-->E([end])
+            D-->E
           ```
 
 
