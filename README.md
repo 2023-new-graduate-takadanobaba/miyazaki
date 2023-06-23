@@ -91,7 +91,6 @@
 
           -フローチャート
           ```mermaid
-             gragh TB
            graph TB
             A([start])-->B{true?}
             B--Yes-->C[process]
