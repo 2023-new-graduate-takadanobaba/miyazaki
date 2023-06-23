@@ -92,10 +92,10 @@
           -フローチャート
           '''mermaid
              gragh TB
-            A[ナメェ入力]-->B{こんにちは、nameさん}
-            B--if(list.size=0)-->c[なにも表示しない]
-            B--if else(list.size=1)-->d[nameさんの好きな食べ物はfoodsです]
-            b--if else(list.size>1)-->e[nameさんの好きな食べ物は～]
+            A["ナメェ入力"]-->B{こんにちは、nameさん}
+            B--if(list.size=0)-->c["なにも表示しない"]
+            B--if else(list.size=1)-->d["nameさんの好きな食べ物はfoodsです"]
+            b--if else(list.size>1)-->e["nameさんの好きな食べ物は～"]
           
           '''
 
