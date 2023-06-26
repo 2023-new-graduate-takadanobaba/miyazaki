@@ -1,7 +1,7 @@
 package mazin;
 
 import java.util.Scanner;
-import java.util.List;
+import java.util.List;A
 import java.util.Arrays;
 
 public class buu {
