@@ -17,7 +17,7 @@ public class buu {
                 List<String> ListFoods = Arrays.asList(line.split(","));
                 System.out.println(ListFoods);
                 System.out.println(ListFoods.size());
-                    if (line.length() == 0) {
+                if (line.length() == 0) {
                     System.out.println();
                 } else if (ListFoods.size() == 1) {
                     System.out.println(name + "さんの好きな食べ物は" + ListFoods.get(0) + "ですね");
@@ -29,8 +29,8 @@ public class buu {
                         int indexOfLast = size - 1;
                         if (i == indexOfLast) {
                             System.out.print(ListFoods.get(i));
-                        }else{
-                        System.out.print(ListFoods.get(i) + "と、");
+                        } else {
+                            System.out.print(ListFoods.get(i) + "と、");
                         }
                     }
                     System.out.print("です");
